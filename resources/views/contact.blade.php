@@ -1,164 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Contact</title>
-
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="flex flex-col min-h-screen">
-   <nav
-   class="flex py-2 px-4 md:px-8 bg-white border-b border-slate-300 dark:border-neutral-700 dark:bg-neutral-900 min-h-[68px] relative z-20"
-   aria-label="Main navigation">
-   <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 w-full">
-      <a href="#"
-         class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
-         <span class="sr-only">Your Company</span>
-         <img src="https://readymadeui.com/logo-alt.svg" alt="readymadeui logo" class="h-9 w-auto" />
-      </a>
-
-      <div id="collapseMenu" tabindex="-1"
-         class="hidden lg:block max-lg:bg-white dark:max-lg:bg-neutral-900 max-lg:border-l max-lg:border-slate-300 dark:max-lg:border-neutral-700 max-lg:w-1/2 max-lg:fixed max-lg:top-0 max-lg:right-0 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto max-sm:w-full z-50 outline-none">
-
-         <div
-            class="py-2 px-4 flex justify-between items-center border-b border-slate-300 sticky top-0 bg-white dark:border-neutral-700 dark:bg-neutral-900 lg:hidden max-lg:min-h-[68px]">
-            <a href="#"
-               class="inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
-               <span class="sr-only">Your Company</span>
-               <img src="https://readymadeui.com/logo-alt.svg" alt="readymadeui logo dialog" class="h-9 w-auto" />
-            </a>
-            <button type="button" aria-controls="collapseMenu" id="toggleClose"
-               class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
-               <span class="sr-only">Close main menu</span>
-               <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-slate-900 dark:fill-slate-50"
-                  aria-hidden="true" viewBox="0 0 329.269 329">
+@extends('layouts.main')
+@section('title', 'halaman contact')
+@section('content')
+      <div
+         class="[box-shadow:0_2px_10px_-5px_rgba(14,14,14,0.4)] bg-white rounded-md border-l-8 border-slate-400 dark:border-neutral-700 dark:bg-neutral-800">
+         <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-button"
+               class="accordion-button text-base text-left font-medium text-slate-900 flex items-center gap-4 p-4 cursor-pointer w-full transition-all hover:text-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:text-slate-50 dark:hover:text-blue-500">
+               <svg xmlns="http://www.w3.org/2000/svg" class="size-8 fill-current shrink-0" viewBox="0 0 1024 1024"
+                  aria-hidden="true">
                   <path
-                     d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"
+                     d="M389.689 420.15c-10.752 0-21.392 0-32.032-1.345 3.024.448 5.936.784 8.96 1.232a159.6 159.6 0 0 1-37.856-10.416l8.064 3.36a151.3 151.3 0 0 1-24.752-13.44c-1.792-1.232-3.584-2.576-5.488-3.808-4.704-3.36 2.016 2.016 2.688 2.128-.784-.112-2.24-1.792-2.912-2.352-3.584-3.024-7.056-6.16-10.304-9.408-3.136-3.136-6.16-6.384-8.96-9.744-.784-.896-1.568-1.904-2.352-2.8-2.576-2.912 5.152 6.944 2.128 2.688-1.344-1.792-2.576-3.584-3.808-5.376-5.376-7.952-9.968-16.464-13.776-25.424l3.36 8.064c-5.04-12.096-8.624-24.752-10.416-37.856.448 3.024.784 5.936 1.232 8.96-1.904-14.784-1.344-29.904-1.344-44.8v-51.856c0-8.512.224-17.024 1.344-25.424-.448 3.024-.784 5.936-1.232 8.96a159.6 159.6 0 0 1 10.416-37.856l-3.36 8.064a151.3 151.3 0 0 1 13.44-24.752c1.232-1.792 2.576-3.584 3.808-5.488 3.36-4.704-2.016 2.016-2.128 2.688.112-.784 1.792-2.24 2.352-2.912 3.024-3.584 6.16-7.056 9.408-10.304 3.136-3.136 6.384-6.16 9.744-8.96.896-.784 1.904-1.568 2.8-2.352 2.912-2.576-6.944 5.152-2.688 2.128 1.792-1.344 3.584-2.576 5.376-3.808 7.952-5.376 16.464-9.968 25.424-13.776l-8.064 3.36c12.096-5.04 24.752-8.624 37.856-10.416-3.024.448-5.936.784-8.96 1.232 17.024-2.24 35.28-2.24 52.304 0-3.024-.448-5.936-.784-8.96-1.232a159.6 159.6 0 0 1 37.856 10.416l-8.064-3.36a151.3 151.3 0 0 1 24.752 13.44c1.792 1.232 3.584 2.576 5.488 3.808 4.704 3.36-2.016-2.016-2.688-2.128.784.112 2.24 1.792 2.912 2.352 3.584 3.024 7.056 6.16 10.304 9.408 3.136 3.136 6.16 6.384 8.96 9.744.784.896 1.568 1.904 2.352 2.8 2.576 2.912-5.152-6.944-2.128-2.688 1.344 1.792 2.576 3.584 3.808 5.376 5.376 7.952 9.968 16.464 13.776 25.424l-3.36-8.064c5.04 12.096 8.624 24.752 10.416 37.856-.448-3.024-.784-5.936-1.232-8.96 1.904 14.784 1.344 29.904 1.344 44.8v51.856c0 8.512-.224 17.024-1.344 25.424.448-3.024.784-5.936 1.232-8.96a159.6 159.6 0 0 1-10.416 37.856l3.36-8.064a151.3 151.3 0 0 1-13.44 24.752c-1.232 1.792-2.576 3.584-3.808 5.488-3.36 4.704 2.016-2.016 2.128-2.688-.112.784-1.792 2.24-2.352 2.912-3.024 3.584-6.16 7.056-9.408 10.304-3.136 3.136-6.384 6.16-9.744 8.96-.896.784-1.904 1.568-2.8 2.352-2.912 2.576 6.944-5.152 2.688-2.128-1.792 1.344-3.584 2.576-5.376 3.808-7.952 5.376-16.464 9.968-25.424 13.776l8.064-3.36c-12.096 5.04-24.752 8.624-37.856 10.416 3.024-.448 5.936-.784 8.96-1.232a208 208 0 0 1-20.272 1.344c-17.584.112-34.384 15.344-33.6 33.6.784 18.144 14.784 33.712 33.6 33.6 51.296-.224 102.48-22.4 136.416-61.264 30.688-35.168 46.704-78.736 46.704-125.44v-76.832c-.112-48.272-18.928-94.976-52.752-129.584C485 58.501 436.617 39.35 386.889 39.35c-22.4 0-44.912 1.904-66.304 9.296-25.312 8.736-48.272 22.176-67.872 40.432-36.848 34.16-57.792 83.552-58.016 133.616-.112 24.976 0 50.064 0 75.04 0 17.472 1.456 35.056 5.824 52.08 6.72 26.096 19.488 49.504 36.176 70.56 31.92 39.984 81.088 63.504 131.712 66.64 7.056.448 14.224.336 21.28.336 17.584 0 34.384-15.456 33.6-33.6-.896-18.256-14.784-33.6-33.6-33.6m282.24 328.383V951.03l33.6-33.6H141.945c-25.984 0-52.192-.672-78.176 0h-1.12l33.6 33.6V767.013c0-12.32-.336-24.64 1.232-36.96-.448 3.024-.784 5.936-1.232 8.96a152 152 0 0 1 10.304-37.744l-3.36 8.064c3.696-8.624 8.176-16.912 13.44-24.64 1.232-1.792 2.576-3.584 3.808-5.376 2.24-3.248-5.488 6.72-2.128 2.688.784-.896 1.568-1.904 2.352-2.8 3.024-3.584 6.16-6.944 9.52-10.304 3.136-3.136 6.496-6.048 9.856-8.848.896-.784 5.04-4.032.112-.112-4.816 3.696-1.008.784.112 0a96 96 0 0 1 5.488-3.808c8.064-5.376 16.688-9.856 25.536-13.664l-8.064 3.36c12.208-5.04 24.864-8.512 37.968-10.304-3.024.448-5.936.784-8.96 1.232 16.352-2.128 33.152-1.344 49.616-1.344h278.208c18.928 0 38.416-1.12 57.12 1.344-3.024-.448-5.936-.784-8.96-1.232a152 152 0 0 1 37.744 10.304l-8.064-3.36c8.624 3.696 16.912 8.064 24.64 13.216 1.792 1.232 3.584 2.464 5.376 3.808 4.816 3.36-2.128-2.128-2.688-2.128.784 0 2.352 1.904 2.8 2.352a135 135 0 0 1 10.304 9.296c3.136 3.136 6.048 6.384 8.848 9.744.784.896 1.568 1.904 2.352 2.8 2.576 2.912-5.152-6.944-2.128-2.688 1.232 1.792 2.576 3.584 3.808 5.376 5.376 7.952 9.856 16.464 13.664 25.2l-3.36-8.064c4.816 11.648 8.064 23.744 9.856 36.176-.448-3.024-.784-5.936-1.232-8.96 1.344 6.496 1.792 13.216 1.792 19.936.112 17.584 15.344 34.384 33.6 33.6 18.144-.784 33.712-14.784 33.6-33.6-.336-61.936-32.704-119.392-84.784-152.656-32.032-20.496-68.768-27.888-106.288-27.888H259.88c-15.68 0-31.472-.112-47.152 0-29.12.112-57.232 7.168-83.328 19.936-27.328 13.328-49.84 34.16-67.648 58.576-18.256 24.976-28 54.544-31.584 85.008-1.12 9.744-1.008 19.488-1.008 29.232V951.03c0 18.144 15.344 33.6 33.6 33.6h563.584c26.096 0 52.192.448 78.176 0h1.12c18.144 0 33.6-15.344 33.6-33.6V748.533c0-17.584-15.456-34.384-33.6-33.6-18.256.896-33.712 14.784-33.712 33.6m177.744-188.72V269.397c0-17.584-15.456-34.384-33.6-33.6-18.256.784-33.6 14.784-33.6 33.6v290.416c0 17.584 15.456 34.384 33.6 33.6 18.256-.784 33.6-14.784 33.6-33.6"
+                     data-original="#000000" />
+                  <path
+                     d="M961.337 381.061H670.92c-17.584 0-34.384 15.456-33.6 33.6.784 18.256 14.784 33.6 33.6 33.6h290.416c17.584 0 34.384-15.456 33.6-33.6-.784-18.256-14.784-33.6-33.6-33.6"
                      data-original="#000000" />
                </svg>
-            </button>
+                  <span>Contact Information?</span>
+               </span>
+               <svg xmlns="http://www.w3.org/2000/svg"
+                  class="arrow-icon ml-auto size-4 fill-current shrink-0 transition-all duration-300"
+                  viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                     d="M12.016 18a1.5 1.5 0 0 1-1.065-.434l-9-9a1.506 1.506 0 0 1 2.13-2.13l7.935 7.95L19.95 6.45a1.5 1.5 0 0 1 2.115 2.115l-9 9a1.5 1.5 0 0 1-1.05.435"
+                     data-name="16" data-original="#000000" />
+               </svg>
+
+            </h3>
+
+            <ul class="list-disc pl-5 space-y-1.5 text-sm text-slate-600 dark:text-slate-400">
+               <li><strong>Instagram:</strong> 
+               <a href="https://www.instagram.com/rejevdh/" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-600 dark:text-red-400">
+               Rejevdh</a></li>
+               <li><strong>Github:</strong>
+                  <a href="https://github.com/ailhamtriadi-a11y" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-600 dark:text-red-400">
+                  ailhamtriadi a11y</a></li>
+               <li><strong>YouTube:</strong> 19i28/Quwte</li>
+            </ul>
          </div>
-
-         <ul class="flex flex-col gap-8 font-semibold text-sm text-slate-900 dark:text-slate-50 lg:flex-row max-lg:p-6">
-            <li>
-               <a href="/"
-                  class="hover:text-blue-700 dark:hover:text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
-                  aria-current="page">Home</a>
-            </li>
-            <li>
-               <a href="/about"
-                  class="hover:text-blue-700 dark:hover:text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">About</a>
-            </li>
-            <li>
-               <a href="/blog"
-                  class="hover:text-blue-700 dark:hover:text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Blog</a>
-            </li>
-            <li>
-               <a href="/contact"
-                  class="hover:text-blue-700 dark:hover:text-blue-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Contact</a>
-            </li>
-         </ul>
-      </div>
-         <button type="button" aria-controls="collapseMenu" aria-expanded="false" aria-haspopup="true" id="toggleOpen"
-            class="cursor-pointer lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
-            <span class="sr-only">Open main menu</span>
-            <svg class="size-7 fill-slate-900 dark:fill-slate-50" aria-hidden="true" viewBox="0 0 20 20"
-               xmlns="http://www.w3.org/2000/svg">
-               <path fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"></path>
-            </svg>
-         </button>
-   </div>
-</nav>
-<main class="flex-1 p-8">
-    <h3>Contact Information</h3>
-
-    <ul>
-        <li>Instagram : Rejevdh </li>
-        <li>Github : ailhamtriadi a11y</li>    
-        <li> Youtobe : 19i28/Quwte</li> 
-    </ul>
-</main>
-    <footer class="bg-[#222] dark:bg-neutral-900 pt-16 pb-8 px-4 md:px-8">
-   <div class="text-center">
-      <ul class="flex gap-x-6 gap-y-4 justify-center flex-wrap text-sm text-slate-400">
-         <li><a href="#"
-               class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Terms
-               of Service</a></li>
-         <li><a href="#"
-               class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Privacy
-               Policy</a></li>
-         <li><a href="#"
-               class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Contact</a>
-         </li>
-         <li><a href="#"
-               class="hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">Company</a>
-         </li>
-      </ul>
-
-      <div class="mt-12">
-         <h6 class="text-sm text-slate-400">Stay connected with us:</h6>
-
-         <ul class="flex justify-center flex-wrap gap-6 mt-8">
-            <li>
-               <a href="#"
-                  class="flex items-center bg-[#333] dark:bg-neutral-800 w-8 h-8 p-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-                  aria-label="Facebook">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="size-full fill-slate-50" viewBox="0 0 155.139 155.139"
-                     aria-hidden="true">
-                     <path
-                        d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761z"
-                        data-original="#010002" />
-                  </svg>
-               </a>
-            </li>
-            <li>
-               <a href="#"
-                  class="flex items-center bg-[#333] dark:bg-neutral-800 w-8 h-8 p-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-                  aria-label="LinkedIn">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="size-full fill-slate-50" viewBox="0 0 24 24"
-                     aria-hidden="true">
-                     <path
-                        d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0"
-                        data-original="#000000" />
-                  </svg>
-               </a>
-            </li>
-            <li>
-               <a href="#"
-                  class="flex items-center bg-[#333] dark:bg-neutral-800 w-8 h-8 p-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-                  aria-label="X">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="size-full fill-slate-50" viewBox="0 0 1226.37 1226.37"
-                     aria-hidden="true">
-                     <path
-                        d="M727.348 519.284 1174.075 0h-105.86L680.322 450.887 370.513 0H13.185l468.492 681.821L13.185 1226.37h105.866l409.625-476.152 327.181 476.152h357.328L727.322 519.284zM582.35 687.828l-47.468-67.894-377.686-540.24H319.8l304.797 435.991 47.468 67.894 396.2 566.721H905.661L582.35 687.854z"
-                        data-original="#000000" />
-                  </svg>
-               </a>
-            </li>
-            <li>
-               <a href="#"
-                  class="flex items-center bg-[#333] dark:bg-neutral-800 w-8 h-8 p-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-                  aria-label="Github">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="size-full fill-slate-50" viewBox="0 0 438.549 438.549"
-                     aria-hidden="true">
-                     <path
-                        d="M409.132 114.573q-29.41-50.392-79.798-79.8C295.736 15.166 259.057 5.365 219.271 5.365c-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8Q0 164.966 0 224.63c0 47.78 13.94 90.745 41.827 128.906q41.827 57.245 108.063 79.227c5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562q0-.855-.144-15.417a2550 2550 0 0 1-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999q-10.28-1.848-19.13-8.559c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559q-6.139-7.995-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429q-1.712-1.996-2.568-3.997-.86-2.002 1.427-3.289c1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851q8.42 5.71 13.846 14.842c4.38 7.806 9.657 13.754 15.846 17.847q9.277 6.138 18.699 6.136 9.42-.001 16.274-1.423 6.848-1.43 12.847-4.285 2.57-19.135 13.988-29.41c-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979q-5.852-18.56-5.852-42.826c0-23.035 7.52-42.637 22.557-58.817q-10.566-25.977 1.997-58.24c5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994s9.089 5.618 12.135 7.708q26.556-7.42 54.818-7.421c28.262-.001 37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979q-9.286 11.282-23.131 18.986c-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146q14.841 12.845 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995q66.244-21.98 108.068-79.226c27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049"
-                        data-original="#000000" />
-                  </svg>
-               </a>
-            </li>
-         </ul>
-      </div>
-
-      <hr class="mb-8 mt-12 border-neutral-700" />
-
-      <div>
-         <p class="text-sm text-slate-400">© ReadymadeUI. All rights reserved.</p>
       </div>
    </div>
-</footer>
-</body>
-</html>
+@endsection

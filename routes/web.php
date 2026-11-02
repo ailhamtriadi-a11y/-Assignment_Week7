@@ -15,12 +15,13 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/blog', function () {
-    return view('blog');
-});
 
+Route::get('/blog', function () {
+    return view('blog', [
+        'title' => 'Halaman Blog'
+    ]);
+});
 Route::get('/contact', function () {
     return view('contact');
 });
-
 
